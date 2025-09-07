@@ -12,7 +12,7 @@ const token =await getToken({req})
 if(!token){
     return NextResponse.json({status:401,error:'Unautorized'})
 }   
- const res=await fetch(`${process.env.API}/cart`,{
+ const res=await fetch(`${process.env.Api}/cart`,{
         headers:{
             token:token.token
         }
