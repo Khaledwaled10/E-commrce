@@ -7,7 +7,7 @@ details: string,
       phone: string,
 }
 
-export async function checkoutOnline(cartId:string,url=process.env.NEXTAUTH_URL,shippingAddress:shippingAddress) {
+export async function checkoutOnline(cartId:string,url='https://e-commrce-rho.vercel.app',shippingAddress:shippingAddress) {
  const token=await getTokenAuth()
   if(!token){
      throw new Error('Unathuorized ,login first')
