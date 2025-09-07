@@ -30,7 +30,6 @@ export async function GET() {
       return NextResponse.json({ message: "Failed to fetch orders", error: orders }, { status: res.status });
     }
 
-    // 4. Return response
     return NextResponse.json(orders, { status: 200 });
   } catch (error) {
     return NextResponse.json(

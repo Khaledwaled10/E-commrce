@@ -27,7 +27,7 @@ export default function Checkout({cartId}:{cartId:string}) {
 
 async  function onsubmit(data: AddressschemeForm) {
    const  shippingAddress=data
-const res =await checkoutOnline(cartId,'',shippingAddress)
+const res =await checkoutOnline(cartId,'https://e-commrce-rho.vercel.app',shippingAddress)
   console.log(res);
   if(res?.status==='success'){
    window.location.href=res?.session?.url
