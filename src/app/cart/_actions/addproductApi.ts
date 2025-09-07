@@ -6,7 +6,7 @@ export default async function addproductApi(productId:string) {
  if(!token){
     throw new Error('Unathuorized ,login first')
  } 
- const res =await fetch(`${process.env.API}/cart`,{
+ const res =await fetch(`${process.env.Api}/cart`,{
     cache:'no-store',
     method:'POST',
     headers:{

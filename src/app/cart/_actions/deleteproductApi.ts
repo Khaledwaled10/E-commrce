@@ -7,7 +7,7 @@ export default async function deleteproductApi(productId:string) {
     throw new Error('Unathuorized ,login first')
  } 
  
- const res =await fetch(`${process.env.API}/cart/${productId}`,{
+ const res =await fetch(`${process.env.Api}/cart/${productId}`,{
     cache:'no-store',
     method:'DELETE',
     headers:{
