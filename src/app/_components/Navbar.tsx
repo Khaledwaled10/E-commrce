@@ -121,7 +121,7 @@ export default function Navbar() {
               <>
                 {session?.user?.image && (
                   <li onClick={() => setIsOpen(false)}>
-                    <Image
+                    <img
                       width={32}
                       height={32}
                       src={session.user.image}

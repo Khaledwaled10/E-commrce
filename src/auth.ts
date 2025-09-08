@@ -49,7 +49,7 @@ export const authOptions: NextAuthOptions = {
             email:user.email||'',
             image:user.image||'',
             role:'user'
-          }
+          },token.token=user.token; 
         }else{
           token.user=user.user;
           token.token=user.token;
