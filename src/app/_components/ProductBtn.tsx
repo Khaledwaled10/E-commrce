@@ -20,6 +20,6 @@ onError:()=>{
 
 
   return<>
-  <Button onClick={()=>mutate(id)} className="w-full my-3 cursor-pointer">Add cart</Button>
+  <Button onClick={()=>mutate(id)} className="w-full my-3 cursor-pointer bg-main">Add cart</Button>
     </>
 }
