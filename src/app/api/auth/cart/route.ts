@@ -8,6 +8,7 @@ export async function GET(req:NextRequest){
 
 const token =await getToken({req})
 
+ console.log(token);
  
 if(!token){
     return NextResponse.json({status:401,error:'Unautorized'})
